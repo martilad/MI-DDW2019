@@ -1,0 +1,369 @@
+= 1. Introduction and Data acquisition - crawling 
+:imagesdir: ../../media/tutorials/01
+:toc:
+
+
+== Introduction
+
+
+* Hellos
+* Six tutorial sessions (every second week)
+** xref:../index#[]
+* Home work/Semestral Work
+** xref:../../hw/index#[]
+* Introduction to the terms of evaluation of the course
+** xref:../../classification/index#[]
+** minimum points for „zápočet“ and exam.
+* Resources
+** xref:../../lectures/index#[Lectures slides]
+** https://courses.fit.cvut.cz/MI-DDW/
+
+
+== Languages
+
+
+=== Python
+
+
+* Python is powerful... and fast;  plays well with others;  runs everywhere;  is friendly & easy to learn; is Open.
+* Well known and widely used in „data science“, „data mining“, ...
+
+
+[source,python]
+----
+fact=1
+for i in range(1,N+1):
+  fact *= i
+----
+
+
+=== JavaScript (Node.js)
+
+
+* Emerging Web server technology, very efficient and fast!
+* Event-driven I/O framework, based on JavaScript V8 engine
+* Only one worker thread
+
+
+[source,javascript]
+----
+// http library
+var http = require("http");
+
+http.createServer(function(req, res) {
+    // check the value of host header
+    if (req.headers.host == "company.cz") {
+        res.writeHead(201, "Content-Type: text/plain");
+        res.end("This is the response...");
+    } else ;
+        // handle enterprise.com app logic...
+}).listen(8080);
+----
+
+
+=== Java
+
+
+* Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, ....
+
+
+== Crawling
+
+
+=== Main issues
+
+
+* Batch vs Incremental crawling
+* Identification
+* Policies
+** Do not overload ...
+** Robots.txt
+* Output
+** Pure HTML
+** Selected data
+*** Extract data using selectors
+
+
+=== Basic implementation
+
+
+==== Virtualenv
+
+
+[source,bash]
+----
+# https://virtualenv.pypa.io/en/stable/userguide/
+
+# create env
+virtualenv ddw-tutorial-1
+# virtualenv --system-site-packages ddw-tutorial-1
+
+# activate
+source ddw-tutorial-1/bin/activate
+
+# operations ...
+pip install ...
+
+# deactivate and remove
+deactivate
+rm -r ./ddw-tutorial-1
+----
+
+
+==== Python implementation of the basic crawler
+
+
+* http://docs.python-requests.org/en/master/user/quickstart/#custom-headers
+
+Prerequisites:
+
+[source,python]
+----
+pip install requests
+pip install beautifulsoup4
+pip install html5lib
+----
+
+
+Implementation:
+
+[source,python]
+----
+import requests
+from bs4 import BeautifulSoup
+
+def crawler(seed):
+    frontier=[seed]
+    crawled=[]
+    while frontier:
+        page=frontier.pop()
+        try:
+            print('Crawled:'+page)
+            source = requests.get(page).text
+            soup=BeautifulSoup(source, "html5lib")
+            links=soup.findAll('a',href=True)
+
+            if page not in crawled:
+                for link in links:
+                    frontier.append(link['href'])
+                crawled.append(page)
+
+        except Exception as e:
+            print(e)
+    return crawled
+
+crawler('https://fit.cvut.cz')
+----
+
+
+==== Scrapy
+
+
+* https://doc.scrapy.org/en/latest/topics/settings.html#settings-per-spider
+
+Prerequisites:
+
+[source,python]
+----
+pip install scrapy
+----
+
+
+Implementation:
+
+
+[source,python]
+----
+import scrapy
+
+class BlogSpider(scrapy.Spider):
+    name = 'blogspider'
+    start_urls = ['https://blog.scrapinghub.com']
+
+    def parse(self, response):
+        for title in response.css('h2.entry-title'):
+            yield {'title': title.css('a ::text').extract_first()}
+
+        next_page = response.css('div.prev-post > a ::attr(href)').extract_first()
+        if next_page:
+            yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
+
+----
+
+
+[source,bash]
+----
+scrapy runspider spider.py -o data.json
+----
+
+
+== robots.txt/sitemaps
+
+
+=== robots.txt
+
+
+* A de-facto standard defining etique policies
+* which sites not to crawl, which bots
+
+
+----
+User-agent: *
+Crawl-delay: 10
+# Directories
+Disallow: /includes/
+Disallow: /misc/
+Disallow: /modules/
+# Files
+Disallow: /CHANGELOG.txt
+Disallow: /cron.php
+Disallow: /INSTALL.mysql.txt
+Disallow: /INSTALL.pgsql.txt
+Disallow: /install.php
+Disallow: /INSTALL.txt
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips/
+Disallow: /logout/
+Disallow: /node/add/
+# Paths (no clean URLs)
+Disallow: /?q=admin/
+Disallow: /?q=comment/reply/
+Disallow: /?q=filter/tips/
+Disallow: /?q=logout/
+----
+
+
+=== Sitemaps
+
+
+* machine-processable Web site structure description
+* An XML file with list of URLs and URLs metadata
+
+
+[source,xml]
+----
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
+    <sitemap>
+        <loc>http://fit.cvut.cz/sitemap0.xml</loc>
+        <lastmod>2014-02-27T15:26:35+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://fit.cvut.cz/sitemap1.xml</loc>
+        <lastmod>2010-02-15T15:00:56+00:00</lastmod>
+    </sitemap>
+</sitemapindex>
+----
+
+
+[source,xml]
+----
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>http://fit.cvut.cz/</loc>
+        <lastmod>2014-02-27T15:26:35+00:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://fit.cvut.cz/node/1</loc>
+        <lastmod>2010-07-31T08:23:17+00:00</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+    </url>
+    ...
+</urlset>
+----
+
+
+= Tasks
+
+
+* Implement a crawler for the local website
+** Extract information about all persons on the website
+** Consider all policies and requirements
+** if you prefer Java, then you can use https://github.com/yasserg/crawler4j
+* Implement a crawler for selected real web site
+** Extract all selected information
+* Store data to a json file
+* Extend the server about sitemaps
+** Create new resource sitemap.xml
+** Generate valid sitemaps file
+
+
+== Source codes
+
+* Clone the gitlab template
+** git@gitlab.fit.cvut.cz:mi-ddw/tutorials/tutorial1.git
+** https://gitlab.fit.cvut.cz/mi-ddw/tutorials/tutorial1
+
+== Local Website for Experiments
+
+
+* Implemented in Node.js
+* Randomly generated places/cities and persons that are associated to those cities
+* Two main structures: list of cities/persons and details about each person
+
+
+=== Installation
+
+
+[source,bash]
+----
+git clone https://gitlab.fit.cvut.cz/MI-DDW/Tutorials/ddw-crawling-web.git
+cd ddw-crawling-web
+npm install
+# npm install chance express express-throttle underscore
+node index.js
+----
+
+
+=== Description
+
+
+Requirements:
+
+* User-agent: DDW
+* Throttling: 1 request / second
+* Robots.txt
+
+Lists:
+
+[source,html]
+----
+
+<h3>Persons:</h3>
+<ul class="persons">
+	<li><a href="/person/Ronald Collier">Ronald Collier</a></li>
+	<li><a href="/person/Marcus Hansen">Marcus Hansen</a></li>
+	<li><a href="/person/Franklin Moody">Franklin Moody</a></li>
+	...
+</ul>
+
+<h3>Cities:</h3>
+<ul class="cities">
+	<li><a href="/city/Gusuvjol">Gusuvjol</a></li>
+	<li><a href="/city/Femjavun">Femjavun</a></li>
+	<li><a href="/city/Mufnijo">Mufnijo</a></li>
+	...
+</ul>
+
+----
+
+
+Person details:
+
+[source,html]
+----
+
+<div class="person">
+	<span class="name">Marcus Hansen</span><br />
+	<span class="phone">(952) 575-4544</span><br />
+	<span class="gender">Female</span><br />
+	<span class="age">44</span><br /></div>
+----
