@@ -1,0 +1,61 @@
+‘Long-term security risks’ from Huawei
+
+The Chinese company Huawei has been strongly criticised in a report by the body overseeing the security of its products in UK telecoms.
+
+The report, issued by the National Cyber Security Centre, which is part of GCHQ, says it can provide "only limited assurance that the long-term security risks can be managed in the Huawei equipment currently deployed in the UK".
+
+The report reflects what are said to be deep frustrations at the failure of the company to address previously identified problems.
+
+Huawei supplies telecoms for telecoms companies operating in the UK and this report comes ahead of a decision by the UK over whether to allow the company to build next generation 5G networks.
+
+Poor practices
+The US has been campaigning for it to be excluded on the basis the company poses a national security risk.
+
+There is no allegation in the latest report that the company is deliberately introducing backdoors or working to carry out any kind of espionage on behalf of the Chinese state.
+
+Rather, the accusation is that poor practices by the company create vulnerabilities that in turn pose security risks.
+
+The report describes "significant technical issues in Huawei's engineering processes".
+
+It also says Huawei's approach to software development brings "significantly increased risk to UK operators".
+
+Officials say the rigorous system of oversight means those risks can be mitigated and managed.
+
+But the report also warns that the current arrangement "can only provide limited assurance that all risks to UK national security from Huawei's involvement in the UK's critical networks can be sufficiently mitigated long-term".
+
+Should we worry about Huawei?
+Huawei and 5G: Decision time
+Why has the UK not blocked Huawei?
+Huawei's kit is often cheaper than that of rivals but with that come concerns that the business model driving its fast growth can lead to sloppiness in its work.
+
+And because the company offers different products to different customers, it has been hard for security officials to be able to confirm that the equipment is all secured to the same standard.
+
+Since 2010, after Huawei partnered first with BT and then other telecoms providers to supply equipment in the UK's telecoms infrastructure, the Huawei Cyber Security Evaluation Centre (HCSEC), known as "the cell", has been examining the hardware and software deployed.
+
+In 2014, a board, chaired by National Cyber Security Centre head Ciaran Martin, was set up to oversee its work.
+
+Other government representatives as well as individuals from Huawei and companies that use Huawei equipment also sit on the oversight board.
+
+Concerns were raised in last year's annual report but this year its report is highly critical of the failure of the company to address these.
+
+Huawei has said it will invest significant sums in dealing with the problems in the next three to five years but it is understood that so far officials have not seen what they consider to be a credible plan to do so.
+
+"No material progress has been made by Huawei in the remediation of the issues reported last year," the report says.
+
+This raises concerns for the future, according to the oversight board.
+
+"It will be difficult to appropriately risk manage future products in the context of UK deployments, until Huawei's software engineering and cyber-security processes are remediated," it says.
+
+"The oversight board currently had not seen anything to give it confidence in Huawei's ability to bring about change via its transformation programme."
+
+
+The report stresses that the decision over Huawei's role in 5G will come after a wider review by the Department for Digital, Culture, Media and Sport (DCMS).
+
+But its warnings raise serious questions as to whether a company whose work on existing systems has proved so problematic should be allowed to play a major role in building the next generation of systems on which significant parts of our daily life will eventually depend.
+
+In response, a Huawei representative said it understood the concerns over its software engineering capability and took them "very seriously".
+
+They added:
+
+the company's board had resolved to invest $2bn to improve its capabilities and a high level plan had been developed
+Huawei would continue to work with UK operators and the National Cyber Security Centre to meet their requirements

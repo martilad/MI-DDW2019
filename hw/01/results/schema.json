@@ -1,0 +1,170 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "url",
+      "title",
+      "type",
+      "keywords",
+      "description",
+      "category",
+      "authors",
+      "text",
+      "article_time_modified",
+      "article_time_published",
+      "video_time_modified",
+      "video_time_published",
+      "sitemap_time"
+    ],
+    "properties": {
+      "url": {
+        "$id": "#/items/properties/url",
+        "type": "string",
+        "title": "The Url Schema",
+        "default": "",
+        "examples": [
+          "https://www.idnes.cz/brno/zpravy/stavka-ridici-kraj-ids.A170404_150219_brno-zpravy_duch"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "title": {
+        "$id": "#/items/properties/title",
+        "type": "string",
+        "title": "The Title Schema",
+        "default": "",
+        "examples": [
+          "Stávka bude, potvrdili odboráři. Ochromí autobusy v Jihomoravském kraji - iDNES.cz"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "type": {
+        "$id": "#/items/properties/type",
+        "type": "string",
+        "title": "The Type Schema",
+        "default": "",
+        "examples": [
+          "article"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "keywords": {
+        "$id": "#/items/properties/keywords",
+        "type": "string",
+        "title": "The Keywords Schema",
+        "default": "",
+        "examples": [
+          "Čad, Jihomoravský kraj, ČSSD, České dráhy, ČSAD, MHD Brno - regionální informace, Jihomoravský hejtman, jízdné, stávka, Blanensko, Ivančice, Jižní Morava, Náměšť nad Oslavou, Břeclavsko, Dopravní podnik města Brna, Veselí nad Moravou, Adamov, práce, aplikace, Integrovaný dopravní systém jihomoravského kraje, Šanghaj, Blansko, Brno-město, Břeclav"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "description": {
+        "$id": "#/items/properties/description",
+        "type": "string",
+        "title": "The Description Schema",
+        "default": "",
+        "examples": [
+          "Na velké komplikace se musejí připravit všichni, kteří běžně do školy či práce vyrážejí hromadnou dopravou. Odboráři potvrdili, že na jižní Moravě stávka, kterou ohlásili od středeční do čtvrteční půlnoci, bude. Bez omezení pojede jen 61 z 217 linek Integrovaného dopravního systému Jihomoravského kraje (IDS JMK)."
+        ],
+        "pattern": "^(.*)$"
+      },
+      "category": {
+        "$id": "#/items/properties/category",
+        "type": "string",
+        "title": "The Category Schema",
+        "default": "",
+        "examples": [
+          "https://www.idnes.cz/brno"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "authors": {
+        "$id": "#/items/properties/authors",
+        "type": "array",
+        "title": "The Authors Schema",
+        "items": {
+          "$id": "#/items/properties/authors/items",
+          "type": "string",
+          "title": "The Items Schema",
+          "default": "",
+          "examples": [
+            "Pavla Komárková",
+            "Markéta Dušková"
+          ],
+          "pattern": "^(.*)$"
+        }
+      },
+      "text": {
+        "$id": "#/items/properties/text",
+        "type": "array",
+        "title": "The Text Schema",
+        "items": {
+          "$id": "#/items/properties/text/items",
+          "type": "string",
+          "title": "The Items Schema",
+          "default": "",
+          "examples": [
+            "Podle podkladů od samotných dopravců ve čtvrtek nevyrazí na 59 autobusových linek, pouze částečně bude doprava zajištěna na 97 linkách a bez omezení pojede 61 z celkového počtu 217 regionálních autobusových linek.",
+            "„Stávku nejvíce pocítí cestující ve východní části kraje, konkrétně na Vyškovsku, Kyjovsku a Břeclavsku. Spolu s koordinátorem IDS společností KORDIS JMK intenzivně pracujeme na opatřeních, která by alespoň částečně zmírnila dopad stávky na občany,“ potvrdila mluvčí kraje Monika Brindzáková.",
+            "Kraj a KORDIS spoléhají na to, že cestující zkusí využít páteřní vlakové spoje, například na trase z Brna do Veselí nad Moravou, do Náměště nad Oslavou nebo tu z Tišnova do Břeclavi. Jednají také s Českými drahami o posílení hlavních linek.",
+            "."
+          ],
+          "pattern": "^(.*)$"
+        }
+      },
+      "article_time_modified": {
+        "$id": "#/items/properties/article_time_modified",
+        "type": "string",
+        "title": "The Article_time_modified Schema",
+        "default": "",
+        "examples": [
+          "2017-04-04T16:34:00"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "article_time_published": {
+        "$id": "#/items/properties/article_time_published",
+        "type": "string",
+        "title": "The Article_time_published Schema",
+        "default": "",
+        "examples": [
+          "2017-04-04T16:34:00"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "video_time_modified": {
+        "$id": "#/items/properties/video_time_modified",
+        "type": "null",
+        "title": "The Video_time_modified Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "video_time_published": {
+        "$id": "#/items/properties/video_time_published",
+        "type": "null",
+        "title": "The Video_time_published Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      },
+      "sitemap_time": {
+        "$id": "#/items/properties/sitemap_time",
+        "type": "null",
+        "title": "The Sitemap_time Schema",
+        "default": null,
+        "examples": [
+          null
+        ]
+      }
+    }
+  }
+}

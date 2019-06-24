@@ -1,0 +1,101 @@
+Scotland’s Orkney islands produce more clean energy than their inhabitants can use. Their next step? Hydrogen. Here’s why that matters – and what the rest of the world could learn.
+
+By Diego Arguedas Ortiz in Stromness, Orkney Islands
+28 March 2019
+I’ve seen thousands of petrol pumps in my life, but this is my first encounter with a hydrogen refuelling station. It sits by the road in the Orkney islands, an archipelago off the north-east coast of Scotland where residents have big dreams: they want to have their cars, ferries and boilers all running on hydrogen.
+
+As we approach the station, its normality is striking. There are no attendants in full-body hazmat suits, no sci-fi loud bangs, no bright neon signs. Just your average dispenser waiting to be used.
+
+But Adele Lidderdale, a hydrogen project officer at the Orkney Islands Council, is a little nervous: one of her van’s sensors has been malfunctioning lately, she says, and might not accept fuel from the nozzle. Now, she plugs the nozzle into her van and steps back to the screen at the other end of the black hose. She looks relieved as the charging process starts with a hydraulic mumble from within the dispenser.
+
+Three minutes later, the 1.4kg tank full, we drive off – all without using one single drop of petrol.
+
+Since Orkney started planning its hydrogen-based economy in 2016, the process hasn’t always been this smooth. When five vans, including this one, arrived in 2017, the islands didn’t have hydrogen for them, as production was still not underway. After managing to charge the tanks, the planners encountered another potential issue: who can fix a broken hydrogen vehicle in a community of 21,000 people?
+
+You might also like:
+
+The biggest energy challenges facing humanity
+The ships that could change the seas forever
+The island with the electric sea
+Were these remote, wild islands the centre of everything?
+In response to the challenges, the Orcadians flew in an expert to train a local mechanic, created fresh educational programmes for ferry operators and drafted regulations to update maritime law to allow hydrogen use in vessels. And they aren’t stopping there. If everything goes according to plan, by 2021 the islands will have the world’s first sea-going car-and-passenger ferry fuelled only by hydrogen.
+
+The archipelago might seem an unlikely place for such cutting-edge aspirations. But if it can succeed, it may inspire other communities to move away from fossil fuels too. As Lidderdale says: “If we can dream that you can run a ship on hydrogen, there’s no reason others won’t follow.”
+
+Clean energy
+
+Unlike petrol or marine diesel, burning hydrogen does not, in itself, produce any harmful by-products. Now, as we drive through Orkney’s capital of Kirkwall, hydrogen combines with oxygen inside the van to produce an electrical reaction that powers the engine. The only tailgate emission is pure water. In other words, there’s no air pollution and no greenhouse gas emissions (such as carbon dioxide) that contribute to global warming. Beyond cars, hydrogen could be used to heat buildings, power electrical facilities, propel trains, ferries and cargo ships and for industrial processes.
+
+Another benefit of hydrogen? If you have too much, you can store and transport it at a large scale with relative ease. As one Bloomberg New Energy Finance consultant wrote in a column published last year, hydrogen “is one of the most promising ways of dealing with longer-term storage, beyond the minutes, hours or days that could be met by batteries”.
+
+But producing hydrogen is complicated. Even though it is the most abundant chemical substance in the universe, very little of it is freely available as a gas, instead forming strong bonds with other elements (for instance with oxygen to create water). You need to break up those links to “free” it for use. That process requires a great deal of electricity – electricity which may not come from “clean” sources itself, and that could be used for other purposes, for instance powering electric vehicles to begin with.
+
+A cheaper way to produce hydrogen, meanwhile, involves using methane and carbon capture and storage (CCS). Some experts argue it might make more sense at scale, but might not be as clean. However, research published in February 2019 suggests that hydrogen produced using renewable electricity might be cost competitive and might match CCS within a decade.
+
+But for Orkney, hydrogen via electricity works just fine. The islands already boast one of the highest densities of electric vehicles in the United Kingdom. And most crucially, thanks to sources like tidal and wave energy, Orkney creates more clean electricity that its inhabitants need. Even after exporting to the UK national grid, the islands’ winds, waves and tides generate about 130% of the electricity its population needs – all of it from clean sources.
+
+As electricity is hard to store at a large scale (we still don’t have humongous batteries for whole communities), some tidal or wind turbines must switch off on occasions to avoid damaging the power lines to the UK mainland, which can’t be updated cheaply.
+
+This curtailment annoys the Orcadians and it is also expensive for the communities that invest their in clean energy. They would rather keep the turbines moving or, alternatively, find a way to use them. So residents came up with an idea: what if we use surplus clean energy to produce hydrogen?
+
+Producing hydrogen
+
+The hydrogen that Lidderdale pumped into the trunk-sized tank sitting behind our backs comes from a long, thin island called Eday, where about 130 people live.
+
+Eday had too much clean energy and no way to use it. The island’s population had invested in a community-owned wind turbine in 2012, hoping to sell electricity back into the UK national grid and profit from the green energy revolution. But later that year, the grid operator announced that too many new turbines had sprung up in northern Scotland and that they couldn’t take all the clean energy produced, says James Stockan, Leader of Orkney Islands Council. The island is also where the European Marine Energy Centre (EMEC), the leading global institution for tidal energy, tries new tidal turbines in the rough Scottish waters.
+
+With two reliable sources of clean energy, the island became an ideal place to start producing hydrogen.
+
+But before anything else, the Orcadians wanted to know if they could produce it in the first place.
+
+In September 2017, after research aided by a £1.4 million grant from the Scottish government, they had their answer. Inside a green trailer-sized container, they ran electricity through water to split the molecules into hydrogen and oxygen in a process called electrolysis. The oxygen was harmlessly released back into the atmosphere; the hydrogen was carefully compressed and stored into cylinders. The cylinders first were used for a humble enough application: they were converted into electricity on a fuel-cell at Kirkwall harbour, with the result of powering lights on some of the harbour’s vessels as well as heating a nearby sailor hall.
+
+It was the proof that if you have too much wind on Friday, you can create hydrogen with it and then use it to switch on your lights, heat a room or power your car on Sunday.
+
+After that, new projects started coming in fast. A second electrolysis station was installed on the island of Shapinsay, as well as a boiler for a school and blueprints to create a hybrid ferry. In the meantime, there were several charging stations and five retrofitted vans were running on hydrogen. But there were even bigger goals ahead.
+
+Oil in the seas
+
+As our ferry left the harbour, the engine growled with diesel and pistons. No-one on board seemed to mind. The dozen or so passengers on the Kirkwall-Shapinsay service remained undisturbed, chatting among themselves or browsing their phones. Our quiet acceptance of that metallic uproar every time an engine kicks off is startling: have we normalised sound pollution?
+
+
+
+I initially came to Orkney because of this vessel. Companies and governments around the world are contemplating hydrogen as a way to clean up the polluting marine shipping industry, which is responsible for more than 2% of all global emissions of carbon dioxide. When I asked a specialist at the European Climate Foundation about the clean shipping frontier, he told me to visit Orkney.
+
+As an archipelago of scattered isles, the Orkney islands depend on their ferry system. Medics, goods, teachers and family members hop daily between the harbours, allowing a sense of community to exist. But the ferries also consume about one-third of Orkney’s fossil fuels, hampering the islands’ ambition to become a greener place. “If you’re looking at how to decarbonise the maritime sector, this is one great way to do it,” says John Clipsham, hydrogen manager at EMEC.
+
+The island of Shapinsay, where we are heading, is home to just over 300 inhabitants, dramatic coasts and rolling hills. Next to the pier, Steve Bews, the chairman of the Shapinsay Development Community Trust, waits for me on a white petrol-powered van. We drive through the hilly countryside and up to the wind turbine that sits atop a slope. Built in 2012, the community-owned turbine has created enough income to provide educational grants, an electric taxi for community errands (there are no taxis on the island) and a subsidy for an extra ferry ride to Kirkwall every evening. But it’s also curtailed, limiting its profitability; Bews says that 36% of its potential was going to waste.
+
+When several organisations approached them some years ago looking for their surplus electricity to produce hydrogen in Shapinsay, the trust agreed. “We’ve got loads of electricity, it’s green and it made sense,” says Bews, who’s a builder by trade and volunteers at the community organisation.
+
+You might also like:
+
+The small Scottish isle leading the world in electricity
+Hydrogen cars: Ready for the road?
+Will we even… have reliable nuclear fusion power?
+The electrolysis station was under construction in December 2018 and should be ready in early 2019. It will be able to produce 500 kg of hydrogen a day, roughly the daily demand of the Kirkwall-Shapinsay service if it becomes operational. The people in Shapinsay get to sell their surplus electricity and they get cheaper heating for their children: a catalytic hydrogen boiler next to the local school waits for fuel to heat its classrooms.
+
+A while later, Bews drops me off again by the pier. Once onboard, the ferry leaves Shapinsay with its metallic song of 20th Century transportation. I wonder if its days are counted.
+
+The journey ahead
+
+Even if marine diesel days have an expiration date, don’t hold your breath. Orkney’s plan is a prototype. The rest of the world following will take years or decades.
+
+
+Still, first steps are promising. Work on the ferry project is already underway at Port Glasgow, where the partnering shipyard Ferguson Marine is based. Meanwhile, a Californian project called Water-Go-Round promises to have a functioning hydrogen ferry later this year, a joint Norwegian-Swedish programme is exploring how fuel-cell technology can move larger vessels and a Japanese shipping giant announced plans for a 200m-long zero emissions cargo ship by 2050. On the policy level, the International Maritime Organisation (IMO) agreed in April 2018 to reduce the sector’s greenhouse gas emissions. Countries gathered in IMO’s London headquarters promised to reduce their footprint by 50% by 2050, compared to 2008 levels.
+
+It’s a big shift for any community to make. From the house I stayed at in Stromness, Orkney’s second most populous town, I could see Flotta, a small island known for its oil terminal. At one point, it had the second largest oil terminal serving the UK’s North Sea.
+
+Compared to the island’s optimism about clean energy, the terminal felt like an ominous presence – both a relic from the past and a reminder of how intertwined fossil fuels are with our current social fabric.
+
+Caron Oag, EMEC’s hydrogen marketing officer, told me her dad worked for the oil terminal for years. It’s a story that’s heard all over the islands. “A lot of people of my generation grew up in households where the oil industry was their income,” said Oag. Like many young Orcadians, she felt her homeland offered few professional pathways and moved abroad to work and study.
+
+But that has changed. The clean energy industry is now providing Orkney’s youth with new options beyond farming and fossil fuels. “My job is a good example of how we are creating new opportunities,” says the council’s Lidderdale, who worked for EMEC between 2012 and 2016.
+
+Many people in Orkney seem proud of the sophistication of their technologies. But they seem even prouder of the ability to do exactly this – provide quality jobs for their young professionals. The industry’s potential even is drawing in people like EMEC’s Clipsham, who relocated here from Germany.
+
+Maybe Orkney can provide a roadmap for other small communities that are loosely connected to national or regional capitals. Maybe the transition away from fossil fuels opens a window of opportunity for these regions.
+
+“There are thousands of islands in the world,” says council leader Stockan. He dreams about a carbon-free world where islands take the lead, instead of being an afterthought for policymakers.
+
+“We have got an exportable commodity (with hydrogen) we can share with them, so that islands don’t get something last – but they can get something first.”
